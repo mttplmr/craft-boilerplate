@@ -1,0 +1,16 @@
+/* -- Site fonts */
+
+/* -- Typekit font import
+@import url("https://use.typekit.net/oon5flc.css");
+*/
+
+/* @font-face {
+    font-family: 'fontello';
+    src: local('fontello'),
+         url('{{ baseUrl }}fonts/fontello.eot');
+    src: url('{{ baseUrl }}fonts/fontello.eot?#iefix') format('embedded-opentype'),
+         url('{{ baseUrl }}fonts/fontello.woff2') format('woff2'),
+         url('{{ baseUrl }}fonts/fontello.woff') format('woff'),
+         url('{{ baseUrl }}fonts/fontello.ttf') format('truetype');
+    font-style: normal;
+} */

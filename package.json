@@ -1,0 +1,174 @@
+{
+    "name": "craft-boilerplate",
+    "version": "1.0.0",
+    "description": "Craft boilerplate for personal projects",
+    "copyright": "Matt Palmer",
+    "author": "Matt Palmer",
+    "license": "Unlicense",
+    "bugs": {
+        "url": "https://gitlab.com/mttplmr/craft-boilerplate/issues"
+    },
+    "homepage": "https://gitlab.com/mttplmr/craft-boilerplate#readme",
+    "main": "gulpfile.js",
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "browser-sync": "^2.26.7",
+        "chalk": "^2.4.2",
+        "critical": "^1.3.4",
+        "fancy-log": "^1.3.3",
+        "git-rev-sync": "^1.12.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-download": "0.0.1",
+        "gulp-favicons": "^2.3.1",
+        "gulp-filter": "^6.0.0",
+        "gulp-header": "^2.0.7",
+        "gulp-if": "^2.0.2",
+        "gulp-imagemin": "^6.0.0",
+        "gulp-load-plugins": "^1.6.0",
+        "gulp-newer": "^1.4.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-print": "^5.0.2",
+        "gulp-purgecss": "^1.2.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-replace": "^1.0.0",
+        "gulp-rev": "^9.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-size": "^3.0.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.2",
+        "moment": "^2.24.0",
+        "tailwindcss": "^1.0.4"
+    },
+    "dependencies": {
+        "fg-loadcss": "^2.1.0",
+        "fontfaceobserver": "^2.1.0",
+        "lazysizes": "^5.1.0",
+        "loadjs": "^3.6.1",
+        "normalize.css": "^8.0.1",
+        "tiny-cookie": "^1.0.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "paths": {
+        "src": {
+            "base": "./src/",
+            "css": "./src/css/",
+            "fonts": "./src/fonts/",
+            "img": "./src/img/",
+            "json": "./src/json/",
+            "js": "./src/js/",
+            "scss": "./src/scss/"
+        },
+        "dist": {
+            "base": "./web/",
+            "css": "./web/css/",
+            "js": "./web/js/",
+            "fonts": "./web/fonts/",
+            "img": "./web/img/"
+        },
+        "build": {
+            "base": "./build/",
+            "css": "./build/css/",
+            "fonts": "./build/fonts/",
+            "js": "./build/js/",
+            "html": "../../../build/html/",
+            "img": "./build/img/"
+        },
+        "favicon": {
+            "src": "./src/img/favicon_src.png",
+            "dest": "./web/img/site/",
+            "path": "/img/site/"
+        },
+        "tailwindcss": {
+            "src": "./src/css/site.css",
+            "conf": "./tailwind.config.js"
+        },
+        "scss": [],
+        "craftConfig": "./config/",
+        "templates": "./templates/"
+    },
+    "globs": {
+        "distCss": [
+            "./build/css/*.css"
+        ],
+        "critical": [
+            {
+                "url": "",
+                "template": "index"
+            },
+            {
+                "url": "offline",
+                "template": "offline"
+            },
+            {
+                "url": "error",
+                "template": "error"
+            },
+            {
+                "url": "503",
+                "template": "503"
+            },
+            {
+                "url": "404",
+                "template": "404"
+            }
+        ],
+        "purgecss": [
+            "./templates/**/*.{html,twig}"
+        ],
+        "purgecssWhitelist": [],
+        "distJs": [
+            "./build/js/*.js",
+            "./node_modules/lazysizes/lazysizes.min.js",
+            "./node_modules/lazysizes/plugins/bgset/ls.bgset.min.js"
+        ],
+        "inlineJs": [
+            "./node_modules/fg-loadcss/src/loadCSS.js",
+            "./node_modules/loadjs/dist/loadjs.min.js",
+            "./node_modules/fg-loadcss/src/cssrelpreload.js",
+            "./node_modules/fontfaceobserver/fontfaceobserver.js",
+            "./node_modules/tiny-cookie/tiny-cookie.min.js",
+            "./src/js/register-service-worker.js",
+            "./src/js/asyncload-site-fonts.js"
+        ],
+        "babelJs": [
+            "./src/js/*.js"
+        ],
+        "download": [
+            {
+                "url": "https://www.google-analytics.com/analytics.js",
+                "dest": "./web/js/"
+            }
+        ],
+        "fonts": [
+            "./src/fonts/*.{eot,ttf,woff,woff2}"
+        ],
+        "siteIcon": "./web/img/site/favicon.*"
+    },
+    "vars": {
+        "siteCssName": "site.combined.min.css",
+        "scssName": "style.scss",
+        "cssName": "style.css"
+    },
+    "urls": {
+        "live": "https://example.com/",
+        "local": "https://example.test/",
+        "critical": "https://example.test/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/mttplmr/example.git"
+    },
+    "browserslist": [
+        "last 3 versions",
+        "> 5%",
+        "iOS >= 8"
+    ]
+}
