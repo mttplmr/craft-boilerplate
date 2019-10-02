@@ -1,5 +1,8 @@
 {
   "name": "mttplmr/craft-boilerplate",
+  "description": "A Craft CMS boilerplate for my personal projects.",
+  "version": "1.0.1",
+  "type": "project",
   "require": {
     "craftcms/cms": "^3.0.0",
     "vlucas/phpdotenv": "^3.4.0",
